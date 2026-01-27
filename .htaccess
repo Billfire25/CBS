@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Set homepage.html as default front page
+    DirectoryIndex homepage.html index.html
+
+    # Optional: Redirect index.html to homepage.html
+    RewriteRule ^index\.html$ homepage.html [R=301,L]
+</IfModule>
